@@ -40,6 +40,7 @@ export default function FavouriteProjects() {
             <SingleCard
               title={proj.title}
               imgUrl={proj.imgUrl}
+              link={proj.link}
               number={`${idx + 1}`}
             />
           ))}

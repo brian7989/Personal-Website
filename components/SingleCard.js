@@ -1,5 +1,5 @@
 
-export default function SingleCard({title, imgUrl, number}) {
+export default function SingleCard({title, imgUrl, link, number}) {
     let sizing_property = null;
 
     switch (number) {
@@ -15,7 +15,7 @@ export default function SingleCard({title, imgUrl, number}) {
     }
 
     return (<a
-        href=""
+        href={link}
         className={sizing_property}
     >
         <div className="relative overflow-hidden">
